@@ -26,6 +26,7 @@ package {
 cc_library_static {
     name: "libandroidicuinit",
     host_supported: true, // for ART host testing.
+    recovery_available: true,
     native_bridge_supported: true,
     srcs: ["*.cpp"],
     // Caution: Don't invoke the caller, e.g. openCommonData, from this library because it could

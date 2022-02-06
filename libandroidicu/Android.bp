@@ -42,6 +42,7 @@ cc_library_shared {
     host_supported: true,
     native_bridge_supported: true,
     unique_host_soname: true,
+    recovery_available: true,
     apex_available: [
         "com.android.i18n",
     ],
@@ -105,6 +106,7 @@ cc_library_shared {
 cc_library_headers {
     name: "libandroidicu_headers",
     host_supported: true,
+    recovery_available: true,
     native_bridge_supported: true,
     apex_available: [
         "com.android.art",

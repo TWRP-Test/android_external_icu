@@ -29,6 +29,7 @@ package {
 cc_defaults {
     name: "libicuuc_defaults",
     defaults: ["icu4c_defaults"],
+    recovery_available: true,
     srcs: [
         "*.cpp",
     ],
@@ -82,6 +83,7 @@ cc_defaults {
 cc_library_headers {
     name: "libicuuc_headers",
     host_supported: true,
+    recovery_available: true,
     native_bridge_supported: true,
     header_libs: ["icu4c_extra_headers"],
     export_header_lib_headers: ["icu4c_extra_headers"],

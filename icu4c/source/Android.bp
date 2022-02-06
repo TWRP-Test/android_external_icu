@@ -39,6 +39,7 @@ cc_library {
     name: "libicuuc_stubdata",
     host_supported: true,
     native_bridge_supported: true,
+    recovery_available: true,
     srcs: ["stubdata/stubdata.cpp"],
     apex_available: [
         "com.android.i18n",

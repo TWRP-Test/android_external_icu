@@ -25,6 +25,7 @@ package {
 cc_library_static {
     name: "libandroidicu_static",
     host_supported: true,
+    recovery_available: true,
     native_bridge_supported: true,
     srcs: [
         "*.cpp",
